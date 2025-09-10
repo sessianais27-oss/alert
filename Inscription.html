@@ -58,15 +58,40 @@
                         <input type="password" id="registerConfirmPassword" name="confirmPassword" placeholder="Confirmez votre mot de passe" required>
                     </div>
                     
-                    <button type="submit" class="btn">Créer un compte
-                        <a href="Interface.html"></a>
-                    </button>
+                    <button type="submit" id="registerbtn" class="btn">Créer un compte</button>
                     
                     <div class="switch-form">
                         Déjà inscrit ? 
                         <a href="Connexion_page.html">Se connecter</a>
                     </div>
                 </form>
+                <script>
+                    const registerName = document.getElementById("registerName");
+                    const registerPassword = document.getElementById("registerPassword");
+                    const registerEmail = document.getElementById("registerEmail");
+                    const registerForm = document.getElementById("registerForm");
+                    const registerConfirmPassword = document.getElementById("registerConfirmPassword");
+
+                    // Activer et Désactiver le bouton
+                    function checkInputs() {
+                        if (registerName.value.trim() !== "" && registerPassword.value.trim() !== "" && registerEmail.value.trim() !== "" && registerConfirmPassword.value.trim() !== "") {
+                            registerbtn.disabled = false;
+                        } else {
+                            registerbtn.disabled = true;
+                        }
+                    }
+
+                    registerName.addEventListener("input", checkInputs);
+                    registerPassword.addEventListener("input", checkInputs);
+                    registerEmail.addEventListener("input", checkInputs);
+                    registerConfirmPassword.addEventListener("input", checkInputs);
+
+                    registerForm.addEventListener("submit", function (e) {
+                        e.preventDefault(); // empêche le rechargement de la page
+
+                        window.location.href = "Interface.html";
+                    })
+                </script>
             </div>
         </div>
     </div>

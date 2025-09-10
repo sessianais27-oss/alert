@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Connexion_page.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connectze-vous</title>
+    <title>Connectez-vous</title>
 </head>
+
 <body>
-   <div class="auth-container">
+    <div class="auth-container">
         <div class="auth-left">
             <div class="logo">⚡ E-Alert</div>
             <h2>Gérez votre consommation électrique</h2>
-            <p>Surveillez, contrôlez et optimisez votre consommation d'énergie en temps réel avec notre solution intelligente.</p>
-            
+            <p>Surveillez, contrôlez et optimisez votre consommation d'énergie en temps réel avec notre solution
+                intelligente.</p>
+
             <div class="features">
                 <div class="feature">
                     <div class="feature-icon">📊</div>
@@ -36,26 +39,52 @@
                     <h3>Connexion</h3>
                     <div class="success-message" id="loginSuccess"></div>
                     <div class="error-message" id="loginError"></div>
-                    
+
                     <div class="form-group">
                         <label for="loginEmail">Email</label>
                         <input type="email" id="loginEmail" name="email" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="loginPassword">Mot de passe</label>
                         <input type="password" id="loginPassword" name="password" required>
                     </div>
-                    
-                    <button type="submit" class="btn">Se connecter</button>
-                    
+
+                    <button type="submit" id="loginbt" class="btn">
+                        Se connecter
+                    </button>
+
                     <div class="switch-form">
-                        Pas encore de compte ? 
-                        <button type="button" onclick="switchToRegister()">S'inscrire</button>
+                        Pas encore de compte ?
+                        <button type="button"><a href="Inscription.html">S'inscrire</a></button>
                     </div>
                 </form>
+                <script>
+                    const loginEmail = document.getElementById("loginEmail");
+                    const loginPassword = document.getElementById("loginPassword");
+                    const loginbt = document.getElementById("loginbt");
+                    const loginForm = document.getElementById("loginForm");
 
-                <!-- Formulaire d'inscription -->
+                    // Activer et Désactiver le bouton
+                    function checkInputs() {
+                        if (loginEmail.value.trim() !== "" && loginPassword.value.trim() !== "") {
+                            loginbt.disabled = false;
+                        } else {
+                            loginbt.disabled = true;
+                        }
+                    }
+
+                    loginEmail.addEventListener("input", checkInputs);
+                    loginPassword.addEventListener("input", checkInputs);
+
+                    loginForm.addEventListener("submit", function (e) {
+                        e.preventDefault(); // empêche le rechargement de la page
+
+                        window.location.href = "Interface.html";
+                    })
+                </script>
+
+                <!-- Formulaire d'inscription 
                 <form class="form hidden" id="registerForm">
                     <h3>Inscription</h3>
                     <div class="success-message" id="registerSuccess"></div>
@@ -87,11 +116,14 @@
                     
                     <div class="switch-form">
                         Déjà un compte ? 
-                        <button type="button" onclick="switchToLogin()"><a href="Inscription.html">Se connecter</a> </button>
+                        <button type="button" >
+                            <a href="Inscription.html">Se connecter</a>
+                         </button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </div>
 </body>
+
 </html>
