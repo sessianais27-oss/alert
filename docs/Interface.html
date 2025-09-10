@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Interface.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Alert</title>
+</head>
+<body>
+   <div class="container">
+        <div class="header">
+            <h1>E-Alert</h1>
+            <div class="location-tabs">
+                <button class="tab active">Mon Appartement</button>
+                <button class="tab">Location A</button>
+                <button class="tab">Location B</button>
+                <button class="tab">Location C</button>
+            </div>
+        </div>
+
+        <!-- ✅ Nouvelle barre de navigation -->
+        <div class="sub-nav">
+             <button >
+                <a href="Consommation.html"class="sub-tab active">Consommation</a>
+             </button>
+            <button >
+                <a href="Contrôle.html"class="sub-tab">Contrôle</a>
+            </button>
+            <button >
+                <a href="Alertes.html"class="sub-tab">Notifications</a>
+            </button>
+            <button >
+                <a href="Crédit.html"class="sub-tab">Crédit</a>
+            </button>
+            <button >
+                <a href="Historiques.html"class="sub-tab">Historique</a>
+            </button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Appareils</div>
+                <div class="stat-value consumption">4</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Connectés</div>
+                <div class="stat-value connected">4</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Tension Moy.</div>
+                <div class="stat-value voltage">227V</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Alertes</div>
+                <div class="stat-value alerts">2</div>
+            </div>
+        </div>
+
+        <div class="devices-section">
+            <h2 class="section-title">Consommation par Appareil</h2>
+            <div class="device-list">
+                <div class="device-item">
+                    <div class="device-info">
+                        <div class="device-icon fridge">❄️</div>
+                        <div class="device-details">
+                            <h3>Réfrigérateur</h3>
+                            <div class="device-id">232.257153490288Q3V</div>
+                        </div>
+                    </div>
+                    <div class="device-consumption">
+                        <span class="consumption-value">1.0 kW</span>
+                        <span class="status-badge">En ligne</span>
+                    </div>
+                </div>
+
+                <div class="device-item">
+                    <div class="device-info">
+                        <div class="device-icon ac">🌡️</div>
+                        <div class="device-details">
+                            <h3>Climatisation</h3>
+                            <div class="device-id">225.127494631578446V</div>
+                        </div>
+                    </div>
+                    <div class="device-consumption">
+                        <span class="consumption-value">1.0 kW</span>
+                        <span class="status-badge">En ligne</span>
+                    </div>
+                </div>
+
+                <div class="device-item">
+                    <div class="device-info">
+                        <div class="device-icon light">💡</div>
+                        <div class="device-details">
+                            <h3>Éclairage</h3>
+                            <div class="device-id">215.611580810054456V</div>
+                        </div>
+                    </div>
+                    <div class="device-consumption">
+                        <span class="consumption-value">0.0 kW</span>
+                        <span class="status-badge">En ligne</span>
+                    </div>
+                </div>
+
+                <div class="device-item">
+                    <div class="device-info">
+                        <div class="device-icon tv">📺</div>
+                        <div class="device-details">
+                            <h3>TV</h3>
+                            <div class="device-id">230V</div>
+                        </div>
+                    </div>
+                    <div class="device-consumption">
+                        <span class="consumption-value">0.1 kW</span>
+                        <span class="status-badge">En ligne</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
