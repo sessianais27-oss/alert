@@ -318,25 +318,25 @@
     border: 1px solid #ddd;
 }
 
-.sub-tab {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    background: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: #555;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+.sub-tab 
+     {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #e5e7eb;
+            color: #6b7280;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
 }
 
 .sub-tab:hover {
-    color: #00796b;
+    color: #98f7ec;
 }
 
 .sub-tab.active {
     background: #e0f2f1;
-    color: #00796b;
+    color: #acf5ec;
     border-radius: 4px;
     font-weight: bold;
 }
