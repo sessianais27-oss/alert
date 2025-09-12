@@ -185,7 +185,7 @@
 .switch input:checked + .slider:before {
     transform: translateX(20px);
 }
-@media (max-width: 375px) {
+ @media (max-width: 375px) {
             .stats-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -217,4 +217,11 @@
                 height: 35px;
                 font-size: 18px;
             }
+        }
+
+        /* Animation pour les données qui se mettent à jour */
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
         }
