@@ -149,51 +149,31 @@ body {
   display: flex;                
   justify-content: flex-start;  
   align-items: center;
-  background-color: #ffffff;    /* Fond blanc ou très clair, selon ta capture */
-  border: 1px solid #ddd;        /* Bordure gris clair */
-  border-radius: 6px;            /* Coins arrondis modestes */
-  margin: 8px 0;                 /* Espace au dessus et en dessous */
-  padding: 6px;                  /* Padding intérieur */
-  overflow-x: auto;              /* Permet le défilement horizontal si trop d’onglets */
+  background-color: #ffffff;    
+  border: 1px solid #ddd;        
+  border-radius: 6px;            
+  margin: 8px 0;                 
+  padding: 6px;                 
+  overflow-x: auto;              
 }
-
-/* En cachant la scrollbar dans les navigateurs WebKit pour un rendu propre */
-.sub-nav::-webkit-scrollbar {
-  display: none;
-}
-
-/* ==== Style des onglets ==== */
 .sub-tab {
-  text-decoration: none;        /* Enlève le soulignement des liens */
-  color: #555555;                /* Couleur du texte des onglets inactifs */
+  text-decoration: none;        
+  color: #555555;                
   font-size: 15px;
   font-weight: 500;
-  padding: 8px 12px;             /* Padding pour cliquer facilement */
-  border-radius: 4px;            /* Coins légèrement arrondis pour chaque onglet */
-  margin-right: 6px;              /* Espace entre les onglets */
-  white-space: nowrap;           /* Empêche le texte de passer à la ligne */
-  flex-shrink: 0;                /* Ne pas rétrécir les onglets quand l’espace diminue */
+  padding: 8px 12px;             
+  border-radius: 4px;            
+  margin-right: 6px;             
+  white-space: nowrap;           
+  flex-shrink: 0;                
   transition: background-color 0.2s, color 0.2s;
-  background-color: transparent; /* Fond transparent ou clair au départ */
+  background-color: transparent; 
 }
-
-/* Effet au survol */
 .sub-tab:hover {
   color: #000000;
   background-color: #efefef;
 }
-/* ==== Responsive pour petits écrans ==== */
-@media (max-width: 375px) { 
-  .sub-nav {
-    padding: 4px;
-  }
-  .sub-tab {
-    padding: 6px 8px;
-    font-size: 13px;
-    margin-right: 4px;
-  }
-}
-/* Responsive Design */
+
     @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -255,7 +235,7 @@ body {
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 375px) {
             .stats-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -269,9 +249,14 @@ body {
                 text-align: center;
                 min-width: 80px;
             }
-            .sub-nav{
-                justify-content: center;
-            }
+            .sub-nav {
+    padding: 4px;
+  }
+  .sub-tab {
+    padding: 6px 8px;
+    font-size: 13px;
+    margin-right: 4px;
+  }
 
             .device-info {
                 gap: 10px;
