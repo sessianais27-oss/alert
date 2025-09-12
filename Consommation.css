@@ -261,7 +261,7 @@ body {
             }
         }
 
-        @media (max-width: 375px) {
+      @media (max-width: 375px) {
             .stats-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -294,6 +294,7 @@ body {
                 font-size: 18px;
             }
         }
+
 
         /* Animation pour les données qui se mettent à jour */
         @keyframes pulse {
