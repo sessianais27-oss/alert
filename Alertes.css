@@ -102,7 +102,7 @@
 .sub-tab {
   padding: 8px 14px;
   text-decoration: none;
-  color: #555;
+  color: #f7f3f3;
   background-color: #e5e7eb;
   border-radius: 20px;
   white-space: nowrap;           
@@ -111,8 +111,8 @@
   font-weight: 500;
 }
 .sub-tab:hover {
-  color: #000000;
-  background-color: #efefef;
+   background-color: #d1d5db;
+  color: #333;
 }
 body {
   font-family: Arial, sans-serif;
