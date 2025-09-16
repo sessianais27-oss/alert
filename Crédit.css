@@ -40,11 +40,11 @@
 
 
         .logo-link:hover .logo-title {
-           color: #7a7c7e;                
+           color: #929496;                
         }
         
         .logo-link:hover .logo-title::before {
-          color: #007bff;                
+          color: #eef0f1;                
         }
         .location-tabs {
             display: flex;

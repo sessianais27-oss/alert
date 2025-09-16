@@ -50,11 +50,11 @@
 
 
         .logo-link:hover .logo-title {
-           color: #7a7c7e;                
+           color: #929496;                
         }
         
         .logo-link:hover .logo-title::before {
-          color: #007bff;                
+          color: #d5d7da;                
         }
 
         .location-tabs {

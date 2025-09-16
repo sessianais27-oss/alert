@@ -17,7 +17,7 @@
             align-items: center;
             font-size: 24px;
             font-weight: 600;
-            color: #2563eb;
+            color: #121213;
         }
         .logo-link{
             text-decoration: none;  
@@ -44,7 +44,7 @@
         }
         
         .logo-link:hover .logo-title::before {
-          color: #007bff;                
+          color: #e7e9eb;                
         }
 
         .location-tabs {
