@@ -19,11 +19,32 @@
             font-weight: 600;
             color: #2563eb;
         }
+        .logo-link{
+            text-decoration: none;  
+            color: inherit;
+        }
+        .logo-title{
+            font-size: 28px;               
+            font-weight: bold;
+            position: relative;           
+            transition: color 0.3s ease; 
+        }
 
-        .header h1::before {
-            content: "⚡";
-            margin-right: 10px;
-            font-size: 28px;
+        .logo-title::before {
+           content: "⚡";
+           margin-right: 10px;
+          font-size: 1.2em;              
+          vertical-align: middle;        
+          transition: color 0.3s ease;   
+        }
+
+
+        .logo-link:hover .logo-title {
+           color: #7a7c7e;                
+        }
+        
+        .logo-link:hover .logo-title::before {
+          color: #007bff;                
         }
 
         .location-tabs {
