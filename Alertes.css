@@ -88,16 +88,16 @@
             background: #0e7490;
         }
         
-       /* ==== Barre de navigation secondaire ==== */
+       
 .sub-nav {
    display: flex;
-            gap: 10px;
-            margin: 20px 0;
-            flex-wrap: wrap;            
+   gap: 10px;
+   margin: 20px 0;
+   flex-wrap: wrap;            
 }
 .sub-tab {
     padding: 10px 20px;
-    border: none;
+    border: #d1d5db;
     border-radius: 25px;
     background: #e5e7eb;
     color: #6b7280;
