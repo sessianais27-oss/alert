@@ -147,16 +147,11 @@
         .refresh-btn:hover {
             transform: scale(1.1);
         }
-
-        /* ---- Barre secondaire (Consommation, Contrôle, etc.) ---- */
-/* ==== Reset de base ==== */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Assure que le padding/border ne dépasse pas la taille définie */
+  box-sizing: border-box; 
 }
-
-/* ==== Corps du document ==== */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -173,7 +168,8 @@ body {
   border-radius: 6px;            
   margin: 8px 0;                 
   padding: 6px;                 
-  overflow-x: auto;              
+  overflow-x: auto; 
+               
 }
 .sub-tab {
   text-decoration: none;        

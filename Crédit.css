@@ -78,7 +78,8 @@
         }
 
 .sub-nav {
-  display: flex;                
+  display: flex;  
+  gap: 10px;              
   justify-content: flex-start;  
   align-items: center;
   background-color: #ffffff;    
@@ -103,8 +104,8 @@
 }
 .sub-tab:hover {
   color: #000000;
-  
 }
+
 body{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
