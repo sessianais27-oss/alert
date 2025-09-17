@@ -159,34 +159,34 @@
 
 
 /* ==== Barre de navigation secondaire ==== */
-.sub-nav {
-  display: flex;                
-  justify-content:space-around;  
-  align-items: center;
-  background-color: #ffffff;    
-  border: 1px solid #ddd;        
-  border-radius: 6px;            
-  margin: 8px 0;                 
-  padding: 6px;                 
-  overflow-x: auto;                
-}
-.sub-tab {
-  text-decoration: none;        
-  color: #555555;                
-  font-size: 15px;
-  font-weight: 500;
-  padding: 8px 12px;             
-  border-radius: 4px;            
-  margin-right: 6px;             
-  white-space: nowrap;           
-  flex-shrink: 0;                
-  transition: background-color 0.2s, color 0.2s;
-  background-color: transparent; 
-}
-.sub-tab:hover {
-  color: #000000;
+       .sub-nav {
+          display: flex;                
+          justify-content:space-around;  
+          align-items: center;
+          background-color: #ffffff;    
+          border: 1px solid #ddd;        
+          border-radius: 6px;            
+          margin: 8px 0;                 
+          padding: 6px;                 
+          overflow-x: auto;                
+        }
+       .sub-tab {
+          text-decoration: none;        
+          color: #555555;                
+          font-size: 15px;
+          font-weight: 500;
+          padding: 8px 12px;             
+          border-radius: 4px;            
+          margin-right: 6px;             
+          white-space: nowrap;           
+          flex-shrink: 0;                
+          transition: background-color 0.2s, color 0.2s;
+          background-color: transparent; 
+        }
+        .sub-tab:hover {
+          color: #000000;
   
-}
+        }
 
     @media (max-width: 768px) {
             .container {
