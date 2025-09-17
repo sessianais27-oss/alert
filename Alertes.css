@@ -90,13 +90,14 @@
         
        /* ==== Barre de navigation secondaire ==== */
 .sub-nav {
-  display: flex;                  
+  display: flex;                
+  justify-content:space-around;  
   align-items: center;
   background-color: #ffffff;    
   border: 1px solid #ddd;        
   border-radius: 6px;            
-  margin: 8px 15px;                 
-  padding: 4px;                 
+  margin: 8px 0;                 
+  padding: 6px;                 
   overflow-x: auto;           
 }
 .sub-tab {
