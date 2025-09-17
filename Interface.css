@@ -24,14 +24,6 @@
             margin-bottom: 50px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
 
         .logo-icon {
             width: 32px;
@@ -57,6 +49,34 @@
             margin-right: 10px;
             font-size: 28px;
         }
+        .logo-link{
+            text-decoration: none;  
+            color: inherit;
+        }
+        .logo-title{
+            font-size: 28px;               
+            font-weight: bold;
+            position: relative;           
+            transition: color 0.3s ease; 
+        }
+
+        .logo-title::before {
+           content: "⚡";
+           margin-right: 10px;
+          font-size: 1.2em;              
+          vertical-align: middle;        
+          transition: color 0.3s ease;   
+        }
+
+
+        .logo-link:hover .logo-title {
+           color: #929496;                
+        }
+        
+        .logo-link:hover .logo-title::before {
+          color: #d5d7da;                
+        }
+
 
         .location-tabs {
             display: flex;
