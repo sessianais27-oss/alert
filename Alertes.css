@@ -1,3 +1,16 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
  .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -115,12 +128,6 @@
 }
 .sub-tab:hover {
   color: #000000;
-}
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0e7490;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  margin: 20px;
 }
 
 .notifications {
