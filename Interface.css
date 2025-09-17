@@ -160,7 +160,8 @@ body {
 
 /* ==== Barre de navigation secondaire ==== */
 .sub-nav {
-  display: flex;                  
+  display: flex;  
+  justify-content: space-around;                
   align-items: center;
   background-color: #ffffff;    
   border: 1px solid #ddd;        
