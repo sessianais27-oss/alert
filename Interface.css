@@ -168,8 +168,7 @@ body {
   border-radius: 6px;            
   margin: 8px 0;                 
   padding: 6px;                 
-  overflow-x: auto; 
-               
+  overflow-x: auto;              
 }
 .sub-tab {
   text-decoration: none;        
