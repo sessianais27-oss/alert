@@ -79,13 +79,13 @@
         }
         
  .sub-nav {
-  display: flex;                 
+  display: flex;                  
   align-items: center;
   background-color: #ffffff;    
-  border: 1px  #ddd;        
-  border-radius: 15px;            
+  border: 1px solid #ddd;        
+  border-radius: 6px;            
   margin: 8px 15px;                 
-  padding: 3px;                 
+  padding: 4px;                 
   overflow-x: auto;              
 }
 .sub-tab {
