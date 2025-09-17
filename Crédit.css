@@ -78,9 +78,8 @@
         }
 
 .sub-nav {
-  display: flex;  
-  gap: 10px;              
-  justify-content: flex-start;  
+  display: flex;                
+  justify-content:space-evenly;  
   align-items: center;
   background-color: #ffffff;    
   border: 1px solid #ddd;        
